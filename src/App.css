@@ -41,4 +41,11 @@ body {
   padding: 0;
   text-decoration: none;
   list-style-type: none;
+  outline: none;
+  /* background-color: black; */
+}
+.container{
+  width: 100%;
+  margin: 1em auto;
+  /* background-color:; */
 }
