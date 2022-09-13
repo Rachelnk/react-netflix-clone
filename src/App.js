@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import MovieBox from './MovieBox';
 import './App.css';
+import { Navbar, Container } from 'react-bootstrap';
 
 
 function App() {
@@ -20,6 +21,11 @@ function App() {
   if(movies) {
   return (
     <>
+    <Navbar bg="dark" expand="lg" variant="dark">
+      <Container fluid>
+        <Navbar.Brand href="">Netflix Clone</Navbar.Brand>
+      </Container>
+    </Navbar>
     <div className='container'>
       <div className='grid'>
         <h1>Hi</h1>
@@ -35,7 +41,14 @@ function App() {
 }
 else {
   return(
-    <p>No films or TV shows found</p>)
+    <div>
+    {/* <p>No films or TV shows found</p> */}
+    <Navbar bg="dark" expand="lg" variant="dark">
+      <Container fluid>
+        <Navbar.Brand href="" style={{color: '#e63c35', fontSize: '30px'}}>Netflix Clone</Navbar.Brand>
+      </Container>
+    </Navbar>
+    </div>)
 }
 
 
