@@ -49,3 +49,9 @@ body {
   margin: 1em auto;
   /* background-color:; */
 }
+.grid{
+  display: grid;
+  margin-left: .5px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
