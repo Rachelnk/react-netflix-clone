@@ -1,7 +1,12 @@
 import { Modal } from "bootstrap";
+import { useState } from 'react'
 const API_IMG="https://image.tmdb.org/t/p/w500/";
 
  function MovieBox (title, poster_path, vote_average, release_date, overview){
+  const [show, setShow] = useState(false);
+  const handleShow=()=>setShow(true);
+  const handleClose=()=>setShow(false);
+
   return(
     <>
       
@@ -11,8 +16,8 @@ const API_IMG="https://image.tmdb.org/t/p/w500/";
           
         </div>
         <div className="card-body">
-          <button type="button" className="btn btn-dark">View More </button> 
-            <Modal>
+          <button type="button" className="btn btn-dark" onClick={handleShow}>View More </button> 
+            <Modal show={show} onHide={handleClose}>
               <Modal.Header closeButton>
                 <Modal.Title></Modal.Title>
 
