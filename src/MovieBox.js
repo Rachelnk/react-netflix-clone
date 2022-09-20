@@ -1,6 +1,9 @@
 import { Modal, Button } from "react-bootstrap";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+ 
 const API_IMG="https://image.tmdb.org/t/p/w500/";
+const API_URL='https://api.themoviedb.org/3/movie/popular?api_key=3114892bac012791fbd2d879d1d3a7d1';
+  const API_SEARCH="https://api.themoviedb.org/3/search/movie?api_key=3114892bac012791fbd2d879d1d3a7d1&query";
 
  function MovieBox (title, poster_path, vote_average, release_date, overview){
   const [show, setShow] = useState(false);
