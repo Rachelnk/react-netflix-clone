@@ -1,7 +1,7 @@
 .banner {
   color: white;
   object-fit: contain;
-  height: 600px;
+  height: 800px;
 }
 .banner__content {
   margin-left: 30px;
@@ -13,12 +13,13 @@
   font-size: 3.5rem;
   font-weight: 800;
   padding-bottom: 0.6rem;
+  padding-top: 100px;
 }
 .banner__description {
   padding-bottom: 0.8rem;
   width: 38%;
   line-height: 1.5rem;
-  padding-top: 1rem;
+  /* padding-top: 100px; */
   font-size: 1.3rem;
   max-width: 35%;
   height: 80px;

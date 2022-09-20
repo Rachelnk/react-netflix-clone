@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Form, FormControl, Button, Modal } from 'react-bootstrap';
+import Banner from './Banner'
 
 
 
@@ -79,6 +80,9 @@ const changeHandler=(e)=>{
           </div>       
            
      </nav>
+     <div>
+      <Banner />
+     </div>
      <div>
       {movies.length > 0 ?(
         <div className='container'>
