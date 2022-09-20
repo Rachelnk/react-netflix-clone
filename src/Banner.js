@@ -4,7 +4,7 @@ const API_URL = 'https://api.themoviedb.org/3/movie/popular?api_key=3114892bac01
 const IMAGE ='https://image.tmdb.org/t/p/w500/';
 
 function Banner(){
-  const [banner, setBanner] = useState([]);
+  const [movie, setBanner] = useState([]);
   useEffect(() =>{
     fetch(API_URL)
     .then((res)=> res.json())
@@ -21,7 +21,21 @@ function truncate(str, n){
 } // function to trancate a string 
 
   return(
-    <></>
+    <>
+      <header
+      className="banner"
+      style={{
+        backgroundSize: "cover",
+        backgroundImage: `url("https://image.tmdb.org/t/p/w500/${movie?.poster_path}")`,
+        backgroundPosition: "center center",
+      }}
+      
+      >
+
+
+      </header>
+    
+    </>
   )
 
 }
